@@ -5,6 +5,7 @@
 
 # Build output
 /dist
+package-lock.json
 
 # Log files
 npm-debug.log*
