@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const imageSchema = mongoose.Schema(
+const mediaSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -19,12 +19,21 @@ const imageSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    mediaType: {
+      type: String,
+      required: true,
+      enum: ['image', 'video'],
+    },
+    mimetype: {
+      type: String,
+      required: true,
+    },
   },
   {
-    timestamps: true, // Adds createdAt and updatedAt fields
+    timestamps: true,
   }
 );
 
-const Image = mongoose.model('Image', imageSchema);
+const Media = mongoose.model('Media', mediaSchema);
 
-export default Image;
+export default Media;

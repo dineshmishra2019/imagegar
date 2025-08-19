@@ -1,0 +1,4 @@
+analyse the codebase and suggest changes to add some features in uploaded files.
+add the buttons for various function on the uploaded file such as delete, download, share, etc.
+progress bar for upload of videos/images.
+ensure that the code is not deleted and only the new code is added.
