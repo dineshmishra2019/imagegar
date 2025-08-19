@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import ImageUpload from '../components/ImageUpload';
+import ImageUpload from '../components/ImageUpload.jsx';
 
 const DashboardPage = () => {
   const { user } = useAuth();

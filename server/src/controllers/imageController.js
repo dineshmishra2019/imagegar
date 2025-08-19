@@ -1,7 +1,6 @@
 import Image from '../models/Image.js';
 
 export const getImages = async (req, res) => {
-  // For now, gets all images. Can be scoped to user later.
   const images = await Image.find({}).populate('user', 'name');
   res.json(images);
 };
